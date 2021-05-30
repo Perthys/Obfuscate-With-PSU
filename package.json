@@ -1,29 +1,24 @@
 {
-    "name": "obfuscate-with-psu",
-    "version": "1.0.0",
-    "description": "This is a GitHub action that allows you to integrate PSU obfuscation into your pipeline.",
-    "main": "src/index.js",
-    "scripts": {
-        "dev": "nodemon src/index.js",
-        "start": "node src/index.js"
-    },
-    "repository": {
-        "type": "git",
-        "url": "git+https://github.com/psuDevelopment/Obfuscate-With-PSU.git"
-    },
-    "author": "ColdDev",
-    "license": "MIT",
-    "bugs": {
-        "url": "https://github.com/psuDevelopment/Obfuscate-With-PSU/issues"
-    },
-    "homepage": "https://psu.dev",
-    "dependencies": {
-        "@actions/core": "^1.2.6",
-        "axios": "^0.21.1"
-    },
-    "devDependencies": {
-        "dotenv": "^8.2.0",
-        "nodemon": "^2.0.7",
-        "prettier": "^2.2.1"
-    }
+  "name": "discord-selfbot-javascript",
+  "version": "1.0.0",
+  "description": "selfbot for discord lol",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "autist69420/VilotStar",
+  "license": "ISC",
+  "dependencies": {
+    "ascii-table": "0.0.9",
+    "common-tags": "^1.8.0",
+    "discord.js": "^12.3.1",
+    "dotenv": "^8.2.0",
+    "fs": "0.0.1-security",
+    "https": "^1.0.0",
+    "luaparse": "^0.3.0",
+    "math-float64-ldexp": "^1.0.1",
+    "nekos.life": "^2.0.7",
+    "randomstring": "^1.1.5",
+    "request": "^2.88.2"
+  }
 }

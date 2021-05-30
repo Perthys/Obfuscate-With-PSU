@@ -1,55 +1,15 @@
-# Obfuscate with PSU
+# Discord.js-Obfuscator-Bot
+Made with menprotect
 
-This is a GitHub action that allows you to integrate PSU obfuscation into your pipeline.
+How to use:
+* If you dont have node install it first
+* Open **"InstallRequirements.cmd"** to install all the needes modules
+* Put your token in **"Config.json"** (where it says Token)
+* Open **"start.cmd"**
+* Dm the bot **"!obfuscate"** (if use a different prefix use that instead of **!**)
+* Select the options you want
+* Send your file
 
-### Prerequisites
+Find the original obfuscator source at: [menprotect](https://github.com/Singularity5490/menprotect)
 
--   A PSU Premium subscription
--   Your API key
--   Your Lua script to be obfuscated
-
-### Known Caveats
-
-Multiple files cannot be obfuscated at once at this time - this issue will be addressed in a later release of the action.
-
-# Usage
-
-### Prerequisites
-
-Create a workflow `.yml` file in `.github/workflows` inside of your repository. An example workflow can be found below.
-
-### Inputs
-
--   `path` - The path to the file to be obfuscated
--   `apiKey` - Your PSU API key, this can be specified through GitHub's secrets.
-
-### Outputs
-
--   `file` - The obfuscated file
-
-### Example workflow
-
-```yml
-name: Example Workflow
-on: push
-
-jobs:
-    obfuscate:
-        runs-on: ubuntu-latest
-
-        steps:
-            - name: Checkout
-              uses: actions/checkout@master
-            - name: Obfuscate with PSU
-              uses: psuDevelopment/Obfuscate-With-PSU@main
-              id: obfuscate
-              with:
-                  path: ./Script.lua
-                  apiKey: ${{ secrets.PSU_API_KEY }}
-            - name: Echo obfuscated file
-              run: echo ${{ steps.obfuscate.outputs.file }}
-```
-
-# Licensing
-
-This project is licensed under the MIT license, feel free to modify as you wish. :)
+Install luaforwindows [here](https://github.com/rjpcomputing/luaforwindows/releases) first before using it.
